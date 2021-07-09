@@ -45,9 +45,11 @@ struct sort_pred {
   }
 };
 
+  //the min dis of every point
 std::vector<cv::KeyPoint> BrownANMS(const std::vector<cv::KeyPoint>& keyPoints,
                                     int numRetPoints);
 
+  //cal the dis of every point using bin 
 std::vector<cv::KeyPoint> Sdc(const std::vector<cv::KeyPoint>& keyPoints,
                               int numRetPoints,
                               float tolerance,
